@@ -1,0 +1,517 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* header area */
+
+header {
+   
+    background: white;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1#logo {
+    color:black;
+    font-weight: 200;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+body {
+    font-size:25px;
+}
+
+.container-fluid {
+   
+    width: 100%;
+    
+}
+.container {
+    max-width: 100%;
+}
+
+main  {
+    background: url(photos/office\ image3.jpeg);
+    background-size: cover;
+    background-position:center;
+   
+}
+main.container-fluid {
+    padding-bottom: 50px;
+    
+}
+div.container {
+    flex-wrap: wrap;
+    display: flex;
+    /* padding-left: 25px; */
+   
+}
+
+
+
+/* top left side  */
+
+div .left-side {
+    width: 50%;
+    min-height: 500px;
+}
+h1#left_text  {
+    font-weight: 200;
+    padding-top: 60px;
+    margin: 0;
+    max-width: 50%;
+    color: white;
+    padding-left: 25px;
+}
+
+h3#left_text  {
+    margin: 0;
+    font-weight: 200;
+    color: white;
+    padding-left: 25px;
+    
+}
+
+p#left_text {
+    max-width: 90%;
+    color: white;
+    padding-left: 25px;
+}
+
+/* top right side form  */
+
+div .right-side {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 20px;
+    
+}
+
+.right-side {
+    align-items: center;
+}
+
+div.Form-background {
+    background-color: rgba(29, 109, 220, 0.837);
+   width: 450px;
+   min-height: 500px;
+   
+}
+
+
+
+
+form {
+max-width: 350px;
+    min-height: 400px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+div#form {
+    padding: 20px;
+    font-weight: 100;
+}
+
+form label {
+    font-size:larger;
+}
+
+input  {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 23px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+
+button.button {
+    color: white;
+    background-color: rgb(253, 157, 73);
+    font-size: larger;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 50px;
+}
+h5#privact {
+    text-align: center;
+    width: 100%;
+    justify-self: center;
+
+}
+
+/* hidden button section  */
+
+button#call2 {
+    background-color:rgb(253, 157, 73);
+    color: white;
+    border: 1px solid;
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+    font-size: medium;
+   
+}
+
+div.call p {
+    color: white;
+    font-weight: 200;
+    
+}
+
+div.call {
+    display: none;
+    
+   
+}
+
+
+
+
+/* item area */
+
+div.middle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 500px;
+
+    
+}    
+
+.item-1 {
+    text-align: center;
+    justify-content: center;
+      
+}  
+
+.item-2 {
+    text-align: center;
+      
+}    
+.item-3 {
+    text-align: center;
+      
+} 
+
+
+
+
+/* bottom body erea */
+.container-fluid-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background-color: lightgray;
+}
+
+.container-row {
+    
+    display: flex;
+    text-align: center;
+    min-height: 300px;
+    /* margin: 0 auto; */
+    padding-bottom: 60px;
+    padding-top: 70px;
+}
+img#profile_image {
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgba(186, 178, 178, 0.514);
+}
+
+div.row-profile hr {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    color: black;
+    border-width: 2px;
+    width: 20%;
+}
+
+p#profile_text {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+
+
+    
+}
+
+
+/* footer area  */
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    line-height: 30px;
+    max-width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+    /* Media Queries area  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    /* header area */
+
+    
+
+    header .container {
+        margin: 0;
+    }
+
+    main .container {
+        flex-wrap:nowrap;
+        flex-direction: column;
+        align-items:normal;
+        
+        text-align:justify;
+        
+
+    }
+
+    .container-fluid {
+        justify-content: center;
+        padding-left: 0;
+   
+}
+
+div.container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    font-size: large;
+   
+}
+    h1#logo {
+        font-size: larger;
+        justify-self: center;
+        font-size: 25px;
+        text-align: center;
+        padding-right: 50px;
+        
+        
+        
+        
+    }
+
+    /* hidden button section  */
+
+    div.call {
+        display: contents;
+        max-width: 90%;
+    }
+
+    button#call2 {
+        max-width: 90%;
+    }
+
+    div.call hr {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    color: white;
+    border-width: 2px;
+    width: 90%;
+    }
+
+    
+
+    /* top left side  */
+
+    div .left-side {
+        min-width: 100%;
+        min-height: 90px;
+       
+    }
+
+    h1#left_text {
+        max-width: 100%;
+        margin: auto;
+       font-weight: 300;
+       margin-bottom: 15px;
+    }
+
+    h3#left_text {
+        max-width: 100%;
+    }
+
+    
+    p#left_text {
+        padding-top: 25px;
+        justify-content: left;
+        text-align: left;
+    }
+
+    /* top right side form  */
+
+
+    div .right-side {
+        min-width: 100%;
+        text-align: left;
+    }
+
+    div.Form-background {
+        max-width: 90%;
+    }
+
+    .right-side {
+        min-width: 100%;
+    }
+    
+    
+    
+    /* item area */
+    
+    .item-1 {
+        padding-top: 20%;
+    }
+    
+    .item-2 {
+        padding-top: 20%;
+    }
+    
+    .item-3 {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    
+    .container-fluid-row  {
+        text-align: center;
+        font-size: medium;
+        font-weight: 300;
+        
+    }
+    
+    p#profile_text {
+        padding-top: 10%;
+        max-width: 90%;
+        text-align: center;
+        justify-content: center;
+        padding-left: 10%;
+    }
+    
+    
+    /* bottom body erea */
+
+    div.middle-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    img#profile_image {
+    
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+       
+    }
+    
+    
+    /* footer area  */
+    
+    div.footer {
+        display: flex;
+        text-align: center;
+        font-size: 15px;
+        
+
+    }
+
+  
+
+}
+
+ 
+
+        /* i have filled to get this section to work properly for tablets */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    flex-container {
+        
+        flex-direction: flex;
+        align-items:normal;
+        justify-content:space-evenly;
+        text-align:justify;
+
+    }
+
+/* 
+    header .container {
+        margin: 0 auto;
+    }
+
+    div .left-side {
+        width: 100%;
+       
+       
+    }
+
+    h1#left_text {
+        
+        max-width: 100%;
+        margin: auto;
+        
+        margin: auto;
+      
+      
+    }
+
+    div.middle-container {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    div .right-side {
+        
+        text-align: left;
+    }
+
+    div.form-background {
+        max-width: 90%;
+    }
+
+
+     .item-1 {
+        padding-top: 20%;
+    }
+
+    .item-2 {
+        padding-top: 20%;
+    }
+
+    .item-3 {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    } */
+}
+    
+
+
+
